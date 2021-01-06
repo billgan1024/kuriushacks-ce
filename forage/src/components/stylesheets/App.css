@@ -1,0 +1,60 @@
+@import "./styles.css";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--bg-color);
+    transition: var(--modeswap);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+/***************
+Landing Page
+***************/
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-cover {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    fill: var(--bg-color-alt);
+    align-self: flex-end;
+    justify-self: center;
+    position: absolute;
+    z-index: 2;
+    transition: var(--modeswap);
+}
+
+.app-grid {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100%;
+    column-gap: 2rem;
+    width: 90vw;
+    flex-grow: 1;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.UI {
+    background-color: var(--bg-color-alt);
+    border-radius: 25px;
+    height: 100%;
+    transition: var(--modeswap);
+}
